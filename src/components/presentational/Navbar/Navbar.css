@@ -1,0 +1,50 @@
+.mobile-header {
+    height: 20%;
+    background: #fff;
+}
+.header {
+    display: none;
+}
+.navbar {
+    display: flex !important;
+    background: #fff !important;
+}
+.mobile-nav {
+    z-index: 1100;
+    height: 40vh;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    background-color: #fff;
+}
+.mobile-nav > a {
+    width: 100%;
+    font-size: 3em;
+    grid-row: auto;
+}
+@media (min-width: 1200px) {
+    .mobile-header { 
+        display: none !important;
+        z-index: 1100;
+    }
+    .header {
+        display: grid;
+        grid-template-rows: 20% 80%;
+        grid-column: 1/3;
+    }
+    .header > * {
+        grid-row: auto !important;
+        margin-top: 5% !important;
+        position: fixed;
+        top: -75px !important;
+    }
+    .header > * > * {
+        width: 100%;
+    }
+    .header > * > * {
+        display: grid !important;
+        grid-template-columns:  50% 12.5% 12.5% 12.5% 12.5%!important;
+    }
+    .header > * > * > *{
+        grid-column: auto !important;
+    }
+}

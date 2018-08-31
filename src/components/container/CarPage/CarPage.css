@@ -1,0 +1,74 @@
+.car-header {
+    margin-top: 20% !important;
+    margin-bottom: 20% !important;
+    font-size: 2.25em !important;
+    text-align: center !important;
+}
+
+.show-description-btn:hover {
+    animation-name: moveButton;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+.show-description-btn:active {
+    animation-name: moveButton;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+.description-enter {
+    opacity: 0.01;
+}
+.description-enter-active {
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+
+.description-exit {
+    opacity: 1;
+}
+
+.description-exit-acitve {
+    opacity: 0.01;
+    transition: all 500ms ease-in;
+}
+
+@keyframes moveButton {
+    0% {
+        /* -webkit-transform: rotate(0deg); */
+        transform: rotate(0deg);
+    }
+    10% {
+        /* -webkit-transform: rotate(359deg); */
+        transform: rotate(15deg);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    30% {
+        transform: rotate(15deg);
+    }
+    40% {
+        /* -webkit-transform: rotate(359deg); */
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    60% {
+        transform: rotate(-15deg);
+    }
+    70% {
+        transform: rotate(15deg);
+    }
+    80% {
+        transform: rotate(-15deg);
+    }
+    90% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}

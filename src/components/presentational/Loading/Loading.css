@@ -1,0 +1,20 @@
+.loader {
+    margin-top: 33%;
+    /* background: black; */
+    grid-column: 2/2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.loading > svg {
+    font-size: 15em !important;
+    height: 100% !important;
+    font-weight: 800 !important;
+}
+@media (min-width: 1200px) {
+    .loading  {
+        height: 15em !important;
+    }
+}
